@@ -7,5 +7,10 @@
       "@utils/*": ["utils/*"]
     }
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+  },
   "include": ["src"]
 }
