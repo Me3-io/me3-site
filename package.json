@@ -22,7 +22,11 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "development": "craco build",
+    "staging": "craco build",
+    "production": "craco build",
+    "local": "craco start"
   },
   "eslintConfig": {
     "extends": [

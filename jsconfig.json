@@ -7,14 +7,5 @@
       "@utils/*": ["utils/*"]
     }
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "development": "react-scripts build",
-    "staging": "react-scripts build",
-    "production": "react-scripts build",
-    "local": "react-scripts start",
-  },
   "include": ["src"]
 }
