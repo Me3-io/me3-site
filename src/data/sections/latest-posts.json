@@ -1,0 +1,9 @@
+{
+  "subtitle": "News",
+  "title": "Latest Updates",
+  "button": {
+    "label": "Follow on X/Twitter",
+    "link": "https://x.com/Me3Labs"
+  },
+  "numOfItems": 3
+}

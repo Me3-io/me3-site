@@ -1,0 +1,177 @@
+{
+  "settings": {
+    "siteName": "World’s First Reward Driven Gamification Hub",
+    "preloader": true,
+    "portfolio": {
+      "categories": [
+        {
+          "label": "Marketing",
+          "slug": "marketing"
+        },
+        {
+          "label": "Interactive",
+          "slug": "interactive"
+        },
+        {
+          "label": "Design",
+          "slug": "design"
+        },
+        {
+          "label": "Branding",
+          "slug": "branding"
+        }
+      ]
+    }
+  },
+  "header": {
+    "logo": {
+      "image": "/images/logo.webp",
+      "image_white": "/images/logo.webp",
+      "alt": "logo"
+    },
+    "menu": [
+      {
+        "label": "Home",
+        "link": "#home",
+        "children": 0
+      },
+      {
+        "label": "Gacha Galaxy",
+        "link": "#gachagalaxy",
+        "children": 0
+      },
+      {
+        "label": "Partner With Us",
+        "link": "#partner",
+        "children": 0
+      },
+      {
+        "label": "Latest News",
+        "link": "#news",
+        "children": 0
+      },
+      {
+        "label": "Investors & Partners",
+        "link": "#partners",
+        "children": 0
+      },
+      {
+        "label": "Help Center",
+        "link": "https://help.me3.io",
+        "children": 0
+      },
+      {
+        "label": "Socials & Communities",
+        "link": "#",
+        "children": [
+          {
+            "label": "Twitter/X",
+            "link": "https://x.com/Me3Labs",
+            "children": 0,
+            "icon": "/images/x.svg"
+          },
+          {
+            "label": "Telegram",
+            "link": "https://t.me/Me3Official",
+            "children": 0,
+            "icon": "/images/telegram.svg"
+          },
+          {
+            "label": "Discord",
+            "link": "https://discord.com/invite/jDQYXyHzKX",
+            "children": 0,
+            "icon": "/images/discord.svg"
+          },
+          {
+            "label": "Help Center",
+            "link": "https://help.me3.io/",
+            "children": 0,
+            "icon": "/images/help.svg"
+          },
+          {
+            "label": "Github",
+            "link": "https://github.com/Me3-io",
+            "children": 0,
+            "icon": "/images/github.svg"
+          },
+          {
+            "label": "Youtube",
+            "link": "https://www.youtube.com/@Me3Labs",
+            "children": 0,
+            "icon": "/images/youtube.svg"
+          },
+          {
+            "label": "Email",
+            "link": "mailto:info@me3.io",
+            "children": 0,
+            "icon": "/images/mail.svg"
+          }
+        ]
+      }
+    ],
+    "button": {
+      "label": "",
+      "link": "#"
+    },
+    "button2": {
+      "label": "Help Center",
+      "link": "https://help.me3.io"
+    }
+  },
+  "footer": {
+    "logo": {
+      "image": "/images/logo.webp",
+      "alt": "logo"
+    },
+    "gallery": [
+      {
+        "image": "/images/post5-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      },
+      {
+        "image": "/images/post4-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      },
+      {
+        "image": "/images/post3-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      },
+      {
+        "image": "/images/post4-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      },
+      {
+        "image": "/images/post1-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      },
+      {
+        "image": "/images/post6-1024x683.jpg",
+        "title": "image",
+        "alt": "image"
+      }
+    ],
+    "copy": "© 2024 ME3 LABS INC  |  ALL RIGHTS RESERVED"
+  },
+  "social": [
+    {
+      "link": "https://facebook.com",
+      "icon": "fab fa-facebook",
+      "title": "Facebook"
+    },
+    {
+      "link": "https://twitter.com",
+      "icon": "fab fa-twitter",
+      "title": "Twitter"
+    },
+    {
+      "link": "https://linkedin.com",
+      "icon": "fab fa-linkedin",
+      "title": "Linkedin"
+    }
+  ]
+}

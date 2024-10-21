@@ -1,0 +1,87 @@
+{
+  "subtitle": "Partners",
+  "title": "Our Partners",
+  "items": [
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/gaimin.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/cryptoknights.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/decubate.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/gameswift.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/kaia.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/kaokaogames.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/koiinetwork.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/orbler.gif"
+    },
+
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/pentagon.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/qopro.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/spacenation.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/g33.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/blocklords.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/masterprotocol.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/gpt.gif"
+    },
+    {
+      "link": "",
+      "label": "Visit Website",
+      "src": "/partners/arthera.gif"
+    }
+  ]
+}

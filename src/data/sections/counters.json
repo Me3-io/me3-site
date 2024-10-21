@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "value": "1",
+      "label": "Supply",
+      "after": "Million"
+    },
+    {
+      "value": "12",
+      "label": "Valuation",
+      "after": "Million"
+    },
+    {
+      "value": "3",
+      "label": "Circulating Supply at TGE",
+      "after": "%"
+    }
+  ]
+}

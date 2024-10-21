@@ -1,0 +1,467 @@
+@use "settings.module";
+
+/* bg color */
+
+.wrapper {
+  background-color: settings.$theme_bg_color;
+  background: url("../../../public/images/wrapbg.webp") repeat scroll;
+  background-size: contain;
+}
+
+.me3-number .num,
+.me3-ticker-slider .title,
+.me3-ticker-slider .title a,
+.me3-counter .num,
+.me3-counter .num-after,
+.me3-history-item .subtitle,
+.me3-team-item .num {
+  color: settings.$theme_bg_color;
+}
+
+/*headings*/
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1.me3-title-1,
+h2.me3-title-1,
+h3.me3-title-1,
+h4.me3-title-1,
+h5.me3-title-1,
+h6.me3-title-1,
+.me3-title-1,
+h1.me3-title-2,
+h2.me3-title-2,
+h3.me3-title-2,
+h4.me3-title-2,
+h5.me3-title-2,
+h6.me3-title-2,
+.me3-title-2,
+h1.me3-title-3,
+h2.me3-title-3,
+h3.me3-title-3,
+h4.me3-title-3,
+h5.me3-title-3,
+h6.me3-title-3,
+.me3-title-3 {
+  color: settings.$heading_color;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1.me3-title-1,
+h2.me3-title-1,
+h3.me3-title-1,
+h4.me3-title-1,
+h5.me3-title-1,
+h6.me3-title-1,
+.me3-title-1,
+h1.me3-title-2,
+h2.me3-title-2,
+h3.me3-title-2,
+h4.me3-title-2,
+h5.me3-title-2,
+h6.me3-title-2,
+.me3-title-2,
+h1.me3-title-3,
+h2.me3-title-3,
+h3.me3-title-3,
+h4.me3-title-3,
+h5.me3-title-3,
+h6.me3-title-3,
+.me3-title-3 {
+  font-family: settings.$heading_font_family;
+}
+@media (min-width: 993px) {
+  .h1,
+  h1,
+  h1.me3-title-1,
+  .me3-title-1 {
+    font-size: settings.$heading_font_size;
+  }
+}
+.h1,
+h1,
+h1.me3-title-1,
+.me3-title-1 {
+  font-weight: settings.$heading_font_weight;
+}
+@media (min-width: 993px) {
+  .h1,
+  h1,
+  h1.me3-title-1,
+  .me3-title-1 {
+    letter-spacing: settings.$heading_letter_spacing;
+  }
+}
+.h1,
+h1,
+h1.me3-title-1,
+.me3-title-1 {
+  text-transform: settings.$heading_font_transform;
+}
+@media (min-width: 993px) {
+  .h2,
+  h2,
+  h2.me3-title-2,
+  .me3-title-2 {
+    font-size: settings.$heading2_font_size;
+  }
+}
+.h2,
+h2,
+h2.me3-title-2,
+.me3-title-2 {
+  font-weight: settings.$heading2_font_weight;
+}
+@media (min-width: 993px) {
+  .h2,
+  h2,
+  h2.me3-title-2,
+  .me3-title-2 {
+    letter-spacing: settings.$heading2_letter_spacing;
+  }
+}
+.h2,
+h2,
+h2.me3-title-2,
+.me3-title-2 {
+  text-transform: settings.$heading2_font_transform;
+}
+@media (min-width: 993px) {
+  .h3,
+  h3 {
+    font-size: settings.$heading3_font_size;
+  }
+}
+.h3,
+h3 {
+  font-weight: settings.$heading3_font_weight;
+}
+@media (min-width: 993px) {
+  .h3,
+  h3 {
+    letter-spacing: settings.$heading3_letter_spacing;
+  }
+}
+.h3,
+h3 {
+  text-transform: settings.$heading3_font_transform;
+}
+@media (min-width: 993px) {
+  .h4,
+  h4 {
+    font-size: settings.$heading4_font_size;
+  }
+}
+.h4,
+h4 {
+  font-weight: settings.$heading4_font_weight;
+}
+@media (min-width: 993px) {
+  .h4,
+  h4 {
+    letter-spacing: settings.$heading4_letter_spacing;
+  }
+}
+.h4,
+h4 {
+  text-transform: settings.$heading4_font_transform;
+}
+@media (min-width: 993px) {
+  .h5,
+  h5 {
+    font-size: settings.$heading5_font_size;
+  }
+}
+.h5,
+h5 {
+  font-weight: settings.$heading5_font_weight;
+}
+@media (min-width: 993px) {
+  .h5,
+  h5 {
+    letter-spacing: settings.$heading5_letter_spacing;
+  }
+}
+.h5,
+h5 {
+  text-transform: settings.$heading5_font_transform;
+}
+@media (min-width: 993px) {
+  .h6,
+  h6 {
+    font-size: settings.$heading6_font_size;
+  }
+}
+.h6,
+h6 {
+  font-weight: settings.$heading6_font_weight;
+}
+@media (min-width: 993px) {
+  .h6,
+  h6 {
+    letter-spacing: settings.$heading6_letter_spacing;
+  }
+}
+.h6,
+h6 {
+  text-transform: settings.$heading6_font_transform;
+}
+
+/* paragraphs */
+html,
+body {
+  color: settings.$text_color;
+}
+html,
+body,
+input,
+textarea,
+button,
+label,
+legend {
+  font-family: settings.$text_font_family;
+}
+html,
+body,
+input,
+textarea,
+button,
+label,
+legend {
+  font-size: settings.$text_font_size;
+}
+html,
+body,
+input,
+textarea,
+button,
+label,
+legend {
+  font-weight: settings.$text_font_weight;
+}
+html,
+body,
+label,
+legend {
+  line-height: settings.$text_line_height;
+}
+html,
+body,
+input,
+textarea,
+button,
+label,
+legend {
+  letter-spacing: settings.$text_letter_spacing;
+}
+
+/* intro */
+.me3-intro .me3-title-1,
+.me3-intro.intro--black .me3-title-1,
+.me3-intro .me3-title-1.me3-text-white,
+.me3-intro.intro--black .me3-title-1.me3-text-white,
+.me3-intro .me3-title-1.me3-text-black,
+.me3-intro.intro--black .me3-title-1.me3-text-black {
+  color: settings.$intro_color;
+}
+.me3-intro .me3-subtitle-2,
+.me3-intro.intro--black .me3-subtitle-2,
+.me3-intro .me3-subtitle-2.me3-text-white,
+.me3-intro.intro--black .me3-subtitle-2.me3-text-white,
+.me3-intro .me3-subtitle-2.me3-text-black,
+.me3-intro.intro--black .me3-subtitle-2.me3-text-black {
+  color: settings.$intro_subtitle_color;
+}
+.me3-intro .me3-breadcrums ul li,
+.me3-intro .me3-breadcrums ul li a .me3-intro.intro--black .me3-breadcrums ul li,
+.me3-intro.intro--black .me3-breadcrums ul li a {
+  color: settings.$intro_bread_color;
+}
+
+/* theme color */
+.block-quote::before,
+blockquote::before,
+.block-quote::before,
+.wp-block-quote::before,
+.wp-block-quote.is-large::before,
+.wp-block-quote.is-style-large::before,
+.wp-block-pullquote::before,
+.me3-hover-1::before,
+.me3-hover-2::before,
+.me3-hover-3::before,
+.me3-hover-btn > .arrow::after,
+.me3-hover-btn > i::after,
+.me3-hover-btn::after,
+a.me3-lnk.lnk--active::after,
+span.me3-lnk.lnk--active::after,
+.me3-lnk.lnk--active a::after,
+.me3-btn.btn--border.btn--color::after,
+.me3-btn.btn--active::before,
+.me3-btn .arrow::before,
+.me3-head-btn .arrow::before,
+.me3-btn.btn--border .arrow::after,
+.me3-btn.btn--border i::after,
+.me3-social-2 ul li a::before,
+.me3-social-active ul li a::before,
+.me3-stars,
+.pager a:hover,
+.page-links .post-page-numbers:hover,
+.pager .current,
+.page-links .current,
+.preloader::before,
+.preloader__double-bounce,
+.me3-menu-overlay,
+.me3-service-item .image,
+.me3-bubble .bubble-1,
+.me3-bubble .bubble-2,
+.me3-bubble .bubble-3,
+.me3-services-showcase .items .img-circle,
+.me3-filter.filter--default .me3-filter-nav-active,
+.me3-showcase .img-circle,
+.me3-video .play::before,
+.me3-cta-social .cta-img-circle,
+.me3-blog-item .desc .date,
+.wp-block-latest-posts__post-date,
+.me3-post-date .date,
+.me3-blog-slide-item .desc .date,
+.me3-pricing-item:hover a.me3-btn.btn--color::after,
+.me3-pricing-item:hover .me3-btn.btn--color::after,
+.me3-faq-item .me3-collapse-btn::after,
+.tags-links a,
+.col-sidebar .tagcloud a,
+.wp-block-tag-cloud a,
+.sidebar__tag-item,
+.me3-post-tags a {
+  background-color: settings.$theme_color;
+}
+.me3-team-item:hover .num,
+.me3-cta-info .email,
+.me3-cta-info .email a,
+.wp-block-calendar a {
+  color: settings.$theme_color;
+}
+.me3-social-2 ul li a:hover,
+.me3-social-active ul li a:hover,
+.pager a:hover,
+.page-links .post-page-numbers:hover {
+  border-color: settings.$theme_color;
+}
+@media (max-width: 1024px) {
+  .me3-filter.filter--default ul li button.item--active,
+  .comment .comment-item__reply a:hover,
+  .comment .comment-item__reply a:focus,
+  .comment .comment-item__reply a:hover::before,
+  .comment .comment-item__reply a:focus::before {
+    background: settings.$theme_color;
+  }
+}
+
+/* buttons */
+.me3-hover-btn::before,
+.me3-btn .arrow::after,
+button[type="submit"],
+input[type="submit"] {
+  background-color: settings.$btn_color;
+}
+.me3-hover-btn::after,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.me3-btn.btn--border.btn--color::after,
+.me3-btn.btn--active::before,
+.me3-btn .arrow::before,
+.me3-head-btn .arrow::before,
+.me3-btn.btn--border .arrow::after,
+.me3-btn.btn--border i::after,
+.me3-pricing-item:hover a.me3-btn.btn--color::after,
+.me3-pricing-item:hover .me3-btn.btn--color::after {
+  background-color: settings.$btn_hover_color;
+}
+button[type="submit"].me3-btn:hover {
+  background-color: transparent;
+}
+a.me3-btn,
+.me3-btn,
+.me3-head-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"] {
+  font-family: settings.$btn_font_family;
+}
+a.me3-btn,
+.me3-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"] {
+  font-size: settings.$btn_font_size;
+}
+a.me3-btn,
+.me3-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"] {
+  font-weight: settings.$btn_font_weight;
+}
+a.me3-btn,
+.me3-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"] {
+  letter-spacing: settings.$btn_letter_spacing;
+}
+a.me3-btn,
+.me3-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"] {
+  text-transform: settings.$btn_font_transform;
+}
+a.me3-btn,
+.me3-btn,
+button[type="submit"],
+input[type="submit"],
+body div.wpforms-container .wpforms-form .me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn,
+body div.wpforms-container .wpforms-form button.me3-btn[type="submit"],
+.me3-hover-btn::before {
+  border-radius: settings.$btn_border_radius;
+}
+
+/* Preloader BG Color */
+.preloader::after {
+  background-color: settings.$preloader_bg_color;
+}
+
+/* Preloader Color */
+.preloader__double-bounce {
+  background-color: settings.$preloader_color;
+}
+/* --options end */

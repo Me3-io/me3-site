@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "webm": "/images/key.webm",
+      "src": "/images/key.webp",
+      "title": "Earn Gacha Keys",
+      "text": "Earn Gacha Keys by engaging with partner brands & communities",
+      "link": "#about"
+    },
+    {
+      "webm": "/images/gachagame.webm",
+      "src": "/images/capsule-machine.webp",
+      "title": "Play Gacha Games",
+      "text": "In-game purchases enable players to pull more gachas & exclusives",
+      "link": "#about"
+    },
+    {
+      "webm": "/images/capsule.webm",
+      "src": "/images/capsule.webp",
+      "title": "Win Gacha Capsules",
+      "text": "Win Valuable Rewards, NFTs, Tokens & More!",
+      "link": "#about"
+    }
+  ]
+}

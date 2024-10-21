@@ -1,0 +1,62 @@
+{
+  "subtitle": "Investors",
+  "title": "Our Investors",
+  "items": [
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/bora.webm",
+      "mp4": "/investors/bora.mp4",
+      "src": "/investors/_bora.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/mavencapital.webm",
+      "mp4": "/investors/mavencapital.mp4",
+      "src": "/investors/_mavencapital.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/outlierventures.webm",
+      "mp4": "/investors/outlierventures.mp4",
+      "src": "/investors/_outlierventures.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/masterventures.webm",
+      "mp4": "/investors/masterventures.mp4",
+      "src": "/investors/_masterventures.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/tokocrypto.webm",
+      "mp4": "/investors/tokocrypto.mp4",
+      "src": "/investors/_tokocrypto.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "webm": "/investors/marshland.webm",
+      "mp4": "/investors/marshland.mp4",
+      "src": "/investors/_marshland.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "mp4": "/investors/elevate.mp4",
+      "webm": "/investors/elevate.webm",
+      "src": "/investors/_elevate.gif"
+    },
+    {
+      "link": "https://google.com",
+      "label": "Visit Website",
+      "mp4": "/investors/bg2.mp4",
+      "webm": "/investors/bg2.webm",
+      "src": "/investors/_bg2.gif"
+    }
+  ]
+}

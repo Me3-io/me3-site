@@ -1,0 +1,40 @@
+.overlay {
+  pointer-events: none; /* Make the overlay non-interactive */
+  position: absolute;
+  opacity: 0.4;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hudImage {
+  pointer-events: none; /* Ensure the image itself is also non-interactive */
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(1.04);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    display: none;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transform: scale(2);
+    z-index: 9999; /* Ensure it's above other elements */
+    pointer-events: none; /* Make the overlay non-interactive */
+  }
+  .hudImage {
+    display: none;
+    transform: scale(1.5);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

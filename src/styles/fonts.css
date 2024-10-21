@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "me3";
+  src: url("../../public/fonts/font-awesome/webfonts/cygun-bold.woff2") format("woff2"),
+    url("../../public/fonts/font-awesome/webfonts/cygun-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
