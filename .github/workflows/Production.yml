@@ -28,7 +28,7 @@ jobs:
         - name: List Build Directory
           run: ls build/
 
-        - name: Copy files in public folder
+        - name: Copy files in puublic folder
           run: |
             mkdir deploy
             cp -r build/* deploy/
