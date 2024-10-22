@@ -27,7 +27,7 @@ const ServicesSection = () => {
                   }
                 >
                   <div className="image">
-                    <a href={item.link}>
+                    <Link to={item.link}>
                       <img
                         src={item.src}
                         alt={item.src}
@@ -38,12 +38,12 @@ const ServicesSection = () => {
                           objectFit: "cover",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <h5 className="me3-title-3">
-                    <a href={item.link}>
+                    <Link to={item.link}>
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </h5>
                   <div className="me3-text">
                     <div>
