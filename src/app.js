@@ -1,5 +1,6 @@
 import React, { useEffect, Suspense } from "react";
 import Layouts from "./layouts/Layouts";
+import { BrowserRouter } from "react-router-dom";
 import { circleText } from "@common/utilits";
 
 import ServicesSection from "./components/sections/Services";
@@ -19,19 +20,21 @@ const App = () => {
   }, []);
 
   return (
-    <Layouts>
-      <Suspense fallback={<div>Loading...</div>}>
-        <HeroSection />
-      </Suspense>
-      <ServicesSection />
-      <AboutSection />
-      <ShowcaseSection />
-      <VideoSection />
-      <TokenomicsSection />
-      <PartnersSection />
-      <InvestorsSection />
-      <LatestPostsSection />
-    </Layouts>
+    <BrowserRouter>
+      <Layouts>
+        <Suspense fallback={<div>Loading...</div>}>
+          <HeroSection />
+        </Suspense>
+        <ServicesSection />
+        <AboutSection />
+        <ShowcaseSection />
+        <VideoSection />
+        <TokenomicsSection />
+        <PartnersSection />
+        <InvestorsSection />
+        <LatestPostsSection />
+      </Layouts>
+    </BrowserRouter>
   );
 };
 
