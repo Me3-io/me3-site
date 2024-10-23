@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import appData from "@data/app.json";
+import { Link } from "react-router-dom";
 import { headerSticky } from "@common/utilits";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -62,14 +62,8 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
     }
   };
 
-  /*const clickedMobileMenuItemParent = (e) => {
-    e.preventDefault();
-    e.currentTarget.parentNode.classList.toggle("opened");
-  };*/
-
   const handleLinkClick = (e, link, hasChildren) => {
     if (hasChildren) {
-      // Handle links with children (sub-menu)
       e.preventDefault();
       e.currentTarget.parentNode.classList.toggle("opened");
       setTimeout(() => {
@@ -77,11 +71,10 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
         menuContainer.scrollTop = menuContainer.scrollHeight;
       }, 600);
     } else if (link.startsWith("#")) {
-      // Handle anchor links
+      e.preventDefault();
+      document.querySelector(link).scrollIntoView({ behavior: "smooth" });
       closeMenu();
-      window.location.href = link; // Navigate to the anchor
     } else {
-      // Handle regular links
       closeMenu();
     }
   };
@@ -100,7 +93,7 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center">
                 {/* Logo */}
                 <div className="me3-logo-image" style={{ maxWidth: "70px" }}>
-                  <a href="/">
+                  <Link to="/">
                     <img src={appData.header.logo.image} alt={appData.header.logo.alt} width="120px" />
                     <img
                       className="logo--white"
@@ -108,18 +101,18 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                       alt={appData.header.logo.alt}
                       width="120px"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-6 align-self-center align-center">
                 {/* Menu Hamburger */}
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className={desktopMenu ? "me3-menu-btn btn--active" : "me3-menu-btn"}
-                  onClick={(e) => clickedDesktopMenu(e)}
+                  onClick={clickedDesktopMenu}
                 >
                   <span></span>
-                </a>
+                </Link>
 
                 <div className="me3-menu-popup align-left">
                   <div className="me3-menu-overlay" />
@@ -131,17 +124,16 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                         <ul className="me3-menu-nav">
                           {navItems.map((item, key) => (
                             <li key={`header-nav-item-${key}`} className={item.classes}>
-                              <a
+                              <Link
                                 className={
                                   item.children.length > 0
                                     ? "me3-lnk lnk--active me3-dropdown-toggle"
                                     : "me3-lnk lnk--active"
                                 }
+                                to={item.link.startsWith("#") ? undefined : item.link}
+                                href={item.link.startsWith("#") ? item.link : undefined}
                                 onClick={(e) => handleLinkClick(e, item.link, item.children.length > 0)}
-                                href={item.link}
                               >
-                                {/* Add dropdown arrow icon for items with children */}
-                                {/* Render icon for main menu items */}
                                 {item.icon && item.icon.endsWith(".svg") ? (
                                   <img
                                     src={item.icon}
@@ -155,17 +147,17 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                                 {item.children.length > 0 && (
                                   <i className="icon fas fa-chevron-down dropdown-arrow-left" />
                                 )}
-                              </a>
+                              </Link>
                               {item.children.length > 0 && (
                                 <ul className="sub-menu">
                                   {item.children.map((subitem, subkey) => (
                                     <li key={`header-nav-sub-item-${subkey}`}>
-                                      <a
+                                      <Link
                                         className="me3-lnk lnk--active"
-                                        href={subitem.link}
+                                        to={subitem.link.startsWith("#") ? undefined : subitem.link}
+                                        href={subitem.link.startsWith("#") ? subitem.link : undefined}
                                         onClick={(e) => handleLinkClick(e, subitem.link, subitem.children.length > 0)}
                                       >
-                                        {/* Render icon for sub-menu items */}
                                         {subitem.icon && subitem.icon.endsWith(".svg") ? (
                                           <img
                                             src={subitem.icon}
@@ -182,7 +174,7 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                                           )
                                         )}
                                         {subitem.label}
-                                      </a>
+                                      </Link>
                                     </li>
                                   ))}
                                 </ul>
@@ -210,4 +202,5 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
     </>
   );
 };
+
 export default DefaultHeader;

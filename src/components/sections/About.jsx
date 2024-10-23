@@ -1,5 +1,4 @@
 import Data from "@data/sections/about.json";
-import { Link } from "react-router-dom";
 import { ButtonAnimated, ButtonDefault } from "../button";
 
 const AboutSection = () => {
