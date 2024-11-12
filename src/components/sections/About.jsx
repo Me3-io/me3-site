@@ -60,7 +60,7 @@ const AboutSection = () => {
               </Link>
               */}
               <div style={{ display: "flex", gap: "1.2rem", flexWrap: "wrap" }}>
-                <ButtonAnimated href={"https://beta.gachagalaxy.me3.io"} text={"Play"} />
+                <ButtonAnimated href={"https://gachagalaxy.me3.io"} text={"Play"} />
                 <ButtonDefault
                   href={"https://airtable.com/appZ8JrBCaa4Rvqk2/pag0Qf6ueTbRVqgqg/form"}
                   text={"Partner With Us"}
