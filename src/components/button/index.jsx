@@ -9,8 +9,9 @@ export const ButtonDefault = ({ href, text }) => {
 };
 
 export const ButtonAnimated = ({ href, text }) => {
+  const validHref = typeof href === "string" ? href : "#";
   return (
-    <a className={styled.button} href={href} target="_blank" rel="noreferrer">
+    <a className={styled.button} href={validHref} target="_blank" rel="noreferrer">
       <span></span>
       <span></span>
       <span></span>
